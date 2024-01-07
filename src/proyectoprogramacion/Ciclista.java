@@ -15,6 +15,7 @@ public class Ciclista {
     private int s_puntos;
     private int m_puntos;
     private int dorsal;
+    private int dorsales;
 
     public Ciclista(String nombre, String pais, Equipo equipo, int s_puntos, int m_puntos, int dorsal) {
         this.nombre = nombre;
