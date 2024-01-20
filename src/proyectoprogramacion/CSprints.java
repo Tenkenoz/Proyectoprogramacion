@@ -24,7 +24,7 @@ public class CSprints extends Clasificacion{
     {
         this.Ordenar();
         Iterator it=ciclistas.iterator();
-        Ciclista aux=new Ciclista();
+        Ciclista aux;
         while(it.hasNext())
         {
             aux=(Ciclista)it.next();

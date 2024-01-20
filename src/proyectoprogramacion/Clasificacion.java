@@ -13,13 +13,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 public class Clasificacion {
     protected Ciclista lider;
-    protected List<Ciclista> ciclistas;
+    protected ArrayList<Ciclista> ciclistas = new ArrayList<>();
     
     public Clasificacion(){
         ciclistas=new ArrayList<Ciclista>();
     }
     public Ciclista definirLider(){
-        Ciclista lider;
+        Ciclista lider = new Ciclista();
         lider=(Ciclista)ciclistas.get(0);
         return lider;
     }

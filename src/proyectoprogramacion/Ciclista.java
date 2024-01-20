@@ -31,8 +31,10 @@ public class Ciclista {
         puntos_s=0;
         equipo.inscribirCorredor(this);
     }
+    public Ciclista(Ciclista ciclista){
+        this(ciclista.dorsal,ciclista.getNombre(),ciclista.getPais(), ciclista.equipo);
+    }
     public Ciclista(){
-        
     }
 
     public String getNombre() {

@@ -14,10 +14,27 @@ import java.util.Iterator;
 import java.util.Collection;
 import java.util.Collections;
 public class CEtapa extends Clasificacion{
-
+private String nombre;
+    private CSprints c_sprint = new CSprints();
+    private CMontaña c_mont = new CMontaña();
+    private int numero;
     public CEtapa() {
         super();
     }
+
+    public CEtapa(String nombre, int numero) {
+        this.nombre = nombre;
+        this.numero= numero;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+    
+    public void agregarCMonataña(CMontaña montaña){
+        c_mont=montaña;
+    }
+    
     public void Ordenar(){
         Collections.sort(ciclistas, new OrdenarTiemposEtapa());
     }
@@ -29,7 +46,7 @@ public class CEtapa extends Clasificacion{
     {
         this.Ordenar();
         int i;
-        Ciclista aux=new Ciclista();
+        Ciclista aux;
         Ciclista ganador=this.definirLider();
         ganador.MostrarGanadorEtapa();
         int tiempo_l=ganador.getTiempo_e();

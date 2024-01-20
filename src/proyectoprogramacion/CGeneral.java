@@ -23,7 +23,7 @@ public class CGeneral extends Clasificacion{
     public void mostrarClasificacion()
     {
         int i;
-        Ciclista aux=new Ciclista();
+        Ciclista aux;
         this.Ordenar();
         Ciclista lider=this.definirLider();
         lider.MostrarLiderGeneral();
